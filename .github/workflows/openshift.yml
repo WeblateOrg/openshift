@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     name: "OpenShift Test"
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
       - name: Setup OpenShift
         uses: manusa/actions-setup-openshift@v1.1.2
         with:
