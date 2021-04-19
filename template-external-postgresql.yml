@@ -76,6 +76,10 @@ parameters:
     description: The hostname of the database user.
     value: weblate
     required: true
+  - name: DATABASE_PORT
+    description: The hostname of the database user.
+    value: 5432
+    required: true
   - name: DATABASE_USERNAME
     description: The name of the database user.
     value: weblate
@@ -243,6 +247,7 @@ objects:
       POSTGRES_PASSWORD: "${DATABASE_PASSWORD}"
       POSTGRES_USER: "${DATABASE_USERNAME}"
       POSTGRES_HOST: "${DATABASE_HOST}"
+      POSTGRES_PORT: "${DATABASE_PORT}"
       REDIS_PASSWORD: "${REDIS_PASSWORD}"
       WEBLATE_ADMIN_PASSWORD: "${WEBLATE_ADMIN_PASSWORD}"
       WEBLATE_ADMIN_NAME: "${WEBLATE_ADMIN_EMAIL}"
