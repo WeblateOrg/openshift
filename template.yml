@@ -29,7 +29,7 @@ parameters:
       https://hub.docker.com/r/weblate/weblate/tags)
     value: latest
     required: true
-  - name: WEBLATE_VOLUME_SIZE
+  - name: WEBLATE_VOLUME_SIZE 
     description: Size of the persistent volume for Weblate.
     value: 10Gi
     required: true
