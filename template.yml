@@ -96,11 +96,11 @@ parameters:
     required: true
   - name: POSTGRESQL_IMAGE
     description: Link to the PostgreSQL image.
-    value: "docker-registry.default.svc:5000/openshift/postgresql:9.6"
+    value: "docker.io/centos/postgresql-13-centos7:latest"
     required: true
   - name: REDIS_IMAGE
     description: Link to the Redis Cache image.
-    value: "docker-registry.default.svc:5000/openshift/redis:3.2"
+    value: "docker.io/centos/redis-32-centos7:latest"
     required: true
   - name: REDIS_PASSWORD
     description: Password for the Redis connection user.
