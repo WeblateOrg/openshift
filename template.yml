@@ -95,7 +95,7 @@ parameters:
     generate: expression
     required: true
   - name: POSTGRESQL_IMAGE
-    description: Link to the PostgreSQL image.
+    description: Link to the PostgreSQL image 13.
     value: "docker.io/centos/postgresql-13-centos7:latest"
     required: true
   - name: REDIS_IMAGE
