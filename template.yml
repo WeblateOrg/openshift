@@ -284,7 +284,7 @@ objects:
                       name: "${APPLICATION_NAME}-secret"
               volumeMounts:
                 - name: data
-                  mountPath: /var/lib/pgsql/data
+                  mountPath: /var/lib/postgresql/data
   - kind: DeploymentConfig
     apiVersion: v1
     metadata:
@@ -337,7 +337,7 @@ objects:
                 timeoutSeconds: 1
               volumeMounts:
                 - name: data
-                  mountPath: /var/lib/redis/data
+                  mountPath: /data
               capabilities: {}
               env:
                 - name: REDIS_PASSWORD
