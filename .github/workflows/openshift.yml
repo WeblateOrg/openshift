@@ -3,24 +3,24 @@ name: OpenShift
 on:
   push:
     branches-ignore:
-      - "dependabot/**"
-      - weblate
+    - dependabot/**
+    - weblate
   pull_request:
   schedule:
-    - cron: "0 4 * * *"
+  - cron: 0 4 * * *
 
 jobs:
   test:
     runs-on: ubuntu-20.04
-    name: "OpenShift Test"
+    name: OpenShift Test
     steps:
-      - uses: actions/checkout@v2.4.0
-      - name: Setup OpenShift
-        uses: manusa/actions-setup-openshift@v1.1.3
-        with:
-          oc version: "v3.11.0"
-          github token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Create Project
-        run: oc new-project weblate-test
-      - name: Create Template
-        run: oc create -f template.yml -n weblate-test
+    - uses: actions/checkout@v2.4.0
+    - name: Setup OpenShift
+      uses: manusa/actions-setup-openshift@v1.1.3
+      with:
+        oc version: v3.11.0
+        github token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Create Project
+      run: oc new-project weblate-test
+    - name: Create Template
+      run: oc create -f template.yml -n weblate-test
