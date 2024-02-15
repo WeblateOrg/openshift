@@ -6,8 +6,6 @@ on:
     - renovate/**
     - weblate
   pull_request:
-  schedule:
-  - cron: 0 4 * * *
 
 jobs:
   test:
