@@ -22,3 +22,5 @@ jobs:
       run: oc new-project weblate-test
     - name: Create Template
       run: oc create -f template.yml -n weblate-test
+permissions:
+  contents: read
