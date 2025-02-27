@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-24.04
     name: OpenShift Test
     steps:
-    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
     - name: Setup OpenShift
       uses: manusa/actions-setup-openshift@e59fe3caa18d7cde81e2ce4797e6549a13f7648c # v1.1.5
       with:
