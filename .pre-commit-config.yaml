@@ -47,4 +47,5 @@ repos:
   - id: kingfisher-auto
 ci:
   autoupdate_schedule: quarterly
-  skip: []
+  skip:
+  - kingfisher-auto
