@@ -5,7 +5,7 @@ OpenShift integration for Weblate
     :alt: Documentation
     :target: https://docs.weblate.org/en/latest/admin/install/openshift.html
 
-The OpenShift integration for Weblate
+OpenShift configuration for deploying Weblate
 
 .. image:: https://s.weblate.org/cdn/Logo-Darktext-borders.png
    :target: https://weblate.org/
